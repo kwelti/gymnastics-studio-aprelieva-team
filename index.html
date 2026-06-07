@@ -1,0 +1,980 @@
+﻿<!doctype html>
+<html
+  lang="en"
+  data-ws-project="19c9471e-55af-4f52-b61d-fa100c10240f"
+  data-ws-last-published="2026-05-16T18:20:23.245Z"
+>
+  <head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/assets/static/app_generated_index-6937cd5a._UcKe8No.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta property="og:url" content="https://aprelieva-team.com.ua/" />
+
+    <meta
+      property="og:title"
+      content="Aprelieva Team — студія повітряної гімнастики, pole dance, стретчингу та йоги"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="Студія гімнастики Aprelieva Team у Луцьку. Повітряна гімнастика, пілонний спорт, банджі фітнес, стретчинг, йога."
+    />
+    <meta
+      property="og:description"
+      content="Студія гімнастики Aprelieva Team у Луцьку. Повітряна гімнастика, пілонний спорт, банджі фітнес, стретчинг, йога."
+    />
+    <title>Aprelieva Team — студія гімнастики</title>
+    <style>
+      /* === Reviews Carousel === */
+      .reviews-section-wrap {
+        text-align: center;
+        padding: 60px 50px 40px;
+      }
+      .carousel-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+      .carousel-viewport {
+        overflow: hidden;
+        width: 100%;
+        margin: 0 16px;
+      }
+      .carousel-track {
+        display: flex;
+        gap: 28px;
+        transition: transform 0.45s cubic-bezier(0.25, 0, 0.3, 1);
+        will-change: transform;
+        cursor: grab;
+        padding: 8px 4px;
+      }
+      .carousel-track:active { cursor: grabbing; }
+      .review-card { flex-shrink: 0; width: 340px; }
+      .review-card-frame {
+        background: #ffffff;
+        border-radius: 40px;
+        padding: 24px;
+        box-shadow: 0 6px 24px rgba(122, 62, 74, 0.10), 0 1px 3px rgba(0, 0, 0, 0.06);
+        transition: transform 0.35s ease, box-shadow 0.35s ease;
+      }
+      .review-card-frame:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 14px 36px rgba(122, 62, 74, 0.16), 0 3px 8px rgba(0, 0, 0, 0.08);
+      }
+      .review-card-frame img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 590px;
+        border-radius: 20px;
+        object-fit: contain;
+      }
+      .carousel-arrow {
+        flex-shrink: 0;
+        width: 48px; height: 48px;
+        border-radius: 50%;
+        border: 1.5px solid #c75b7a;
+        background: #fff;
+        color: #c75b7a;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.25s ease;
+        z-index: 2;
+        padding: 0;
+      }
+      .carousel-arrow:hover:not(:disabled) { background: #c75b7a; color: #fff; }
+      .carousel-arrow:disabled { opacity: 0.25; cursor: not-allowed; }
+      .carousel-arrow svg { width: 22px; height: 22px; pointer-events: none; }
+      .carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 28px;
+      }
+      .carousel-dot {
+        width: 10px; height: 10px;
+        border-radius: 50%;
+        background: #d9c5ca;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        transition: background 0.25s ease, transform 0.25s ease;
+      }
+      .carousel-dot.active { background: #c75b7a; transform: scale(1.35); }
+      .carousel-dot:hover:not(.active) { background: #c08493; }
+      @media (max-width: 1200px) {
+        .review-card { width: 300px; }
+        .review-card-frame { padding: 20px; }
+        .review-card-frame img { max-height: 520px; }
+        .carousel-track { gap: 22px; }
+      }
+      @media (max-width: 991px) {
+        .review-card { width: 280px; }
+        .review-card-frame { padding: 18px; border-radius: 36px; }
+        .review-card-frame img { max-height: 480px; border-radius: 18px; }
+        .carousel-track { gap: 18px; }
+        .reviews-section-wrap { padding: 40px 30px 30px; }
+      }
+      @media (max-width: 767px) {
+        .review-card { width: 72vw; max-width: 320px; }
+        .review-card-frame { padding: 14px; border-radius: 32px; }
+        .review-card-frame img { max-height: 480px; border-radius: 16px; }
+        .carousel-track { gap: 14px; }
+        .reviews-section-wrap { padding: 30px 12px 24px; }
+        .carousel-arrow { width: 32px; height: 32px; }
+        .carousel-arrow svg { width: 16px; height: 16px; }
+        .carousel-viewport { margin: 0 4px; }
+      }
+      @media (max-width: 479px) {
+        .review-card { width: 76vw; max-width: 280px; }
+        .review-card-frame { padding: 10px; border-radius: 28px; }
+        .review-card-frame img { max-height: 400px; border-radius: 14px; }
+        .carousel-track { gap: 10px; }
+        .reviews-section-wrap { padding: 24px 8px 20px; }
+        .carousel-arrow { width: 28px; height: 28px; }
+        .carousel-arrow svg { width: 14px; height: 14px; }
+        .carousel-viewport { margin: 0 2px; }
+      }
+    </style>
+  </head>
+  <body
+    class="w-body cauqto8 c47o47j cw5izhw cr0oxd0 c1g73oqx c1o7vw1 c1jcg8pr c1rbse75 c8xita1"
+  >
+    <div
+      class="w-element cry9bxc c1qyy4dh c1wt8a7g c1lxiyww cgn90jy cuordau clnhgiz c1ngdwug c10yh23j c1sz3la2 c1saaox1 c1oxhx54 c1np8q7w c12iz4pn c1s5r7yb"
+    >
+      <button
+        type="button"
+        class="w-button csru8nn c1qyy4dh ct02u4h c1e7helk c9dia3q chby825 cj9cgi3 cmrkua2 chxr8al clh6saz cy1haag c6xd4vr ckuswpy c1fo9lv5 c1ac3kc0 cl8xzcs c19ip5yl c178sslk cdtbwtz c1i7nyap c1q0jf93 cff9lwm cdoj399 c9tqkg0 c14v8q3d"
+        aria-haspopup="dialog"
+        aria-expanded="false"
+        aria-controls="radix-:R8m:"
+        data-state="closed"
+      >
+        <div class="w-html-embed c8xita1 c1qlwt3r">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 16 16"
+            width="100%"
+            height="100%"
+            style="display: block"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.667 8h10.666M2.667 4h10.666M2.667 12h10.666"
+            />
+          </svg>
+        </div></button
+      ><button
+        class="w-element c1lrq100 cdpnt9v c1u1jra5 c3ovwjq cgokyrd c1rz9aaq cnxdcup c1idwigv cd1r06b cavd3zn cmyg2r9 c1cvcmzo c9h53jh c1k0o02s c143p8o c1k26d3g coyqk5m c1ngdwug c10yh23j ckkbdq2 c1wxg36x c17b9p6f cuiv0do cohhi8y cr2orvw cgb53j1 c1ro4ucl c1s5r7yb c1ggkywf"
+      >
+        Відгуки</button
+      ><a href="/" class="w-element cir85gx c9jnjeu c1357293"
+        ><img
+          alt=""
+          width="90"
+          height="630"
+          src="/assets/aprelieva_team_png_1_8szrb4w33QDkALAI9uON9.png"
+          class="w-image c143p8o c9jnjeu c12sm2j2 cavd3zn c1ncfyhk c1357293 c937pos c6lwvnh cvnwoad c1jrt3rz c1d8arwn cfmtbnp cafy7li"
+          sizes="100vw"
+          srcset="
+            /assets/aprelieva_team_png_1_8szrb4w33QDkALAI9uON9.png  16w,
+            /assets/aprelieva_team_png_1_8szrb4w33QDkALAI9uON9.png  32w,
+            /assets/aprelieva_team_png_1_8szrb4w33QDkALAI9uON9.png  48w,
+            /assets/aprelieva_team_png_1_8szrb4w33QDkALAI9uON9.png  64w,
+            /assets/aprelieva_team_png_1_8szrb4w33QDkALAI9uON9.png  96w,
+            /assets/aprelieva_team_png_1_8szrb4w33QDkALAI9uON9.png 128w,
+            /assets/aprelieva_team_png_1_8szrb4w33QDkALAI9uON9.png 256w
+          "
+          decoding="async"
+          loading="lazy" /></a
+      ><a
+        href="https://www.instagram.com/aprelieva_team?igsh=OXBxeXJrYWNtcTIx"
+        class="w-element cir85gx"
+        ><img
+          alt=""
+          width="81"
+          height="81"
+          src="/assets/image_49_tBN-XxhpkPcy2qhr9VS11.png"
+          class="w-image c1drl6o7 c15a6z8g crlvqca cf41opd c1tb5lbl c1si4a8i c1qlwt3r cgb53j1 c1l3jh5c"
+          sizes="100vw"
+          srcset="
+            /assets/image_49_tBN-XxhpkPcy2qhr9VS11.png  16w,
+            /assets/image_49_tBN-XxhpkPcy2qhr9VS11.png  32w,
+            /assets/image_49_tBN-XxhpkPcy2qhr9VS11.png  48w,
+            /assets/image_49_tBN-XxhpkPcy2qhr9VS11.png  64w,
+            /assets/image_49_tBN-XxhpkPcy2qhr9VS11.png  96w,
+            /assets/image_49_tBN-XxhpkPcy2qhr9VS11.png 128w,
+            /assets/image_49_tBN-XxhpkPcy2qhr9VS11.png 256w
+          "
+          decoding="async"
+          loading="lazy" /></a
+      ><a
+        href="https://www.tiktok.com/@aerial.aprelieva_"
+        class="w-element cir85gx"
+        ><img
+          alt=""
+          width="81"
+          height="81"
+          src="/assets/image_48_Z-gNsGXLnWeH2UgkXaYQs.png"
+          class="w-image c1drl6o7 crlvqca c15a6z8g cf41opd c1si4a8i c1tb5lbl c1qlwt3r cgb53j1"
+          sizes="100vw"
+          srcset="
+            /assets/image_48_Z-gNsGXLnWeH2UgkXaYQs.png  16w,
+            /assets/image_48_Z-gNsGXLnWeH2UgkXaYQs.png  32w,
+            /assets/image_48_Z-gNsGXLnWeH2UgkXaYQs.png  48w,
+            /assets/image_48_Z-gNsGXLnWeH2UgkXaYQs.png  64w,
+            /assets/image_48_Z-gNsGXLnWeH2UgkXaYQs.png  96w,
+            /assets/image_48_Z-gNsGXLnWeH2UgkXaYQs.png 128w,
+            /assets/image_48_Z-gNsGXLnWeH2UgkXaYQs.png 256w
+          "
+          decoding="async"
+          loading="lazy" /></a
+      ><a href="tel:+380633328239" class="w-element cir85gx"
+        ><img
+          alt=""
+          width="1008"
+          height="1016"
+          src="/assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png"
+          class="w-image crlvqca cetw895 c1drl6o7 cf41opd c1si4a8i cwysdja c1qlwt3r cgb53j1 c188an48 c96rhjx"
+          sizes="100vw"
+          srcset="
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png   16w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png   32w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png   48w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png   64w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png   96w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png  128w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png  256w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png  384w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png  640w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png  750w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png  828w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png 1080w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png 1200w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png 1920w,
+            /assets/ef8d7669-07f0-4fb5-89a0-7e9e44892a3d_P4olqtPflCJTJWYCFgnWT.png 2048w
+          "
+          decoding="async"
+          loading="lazy"
+      /></a>
+    </div>
+    <div class="w-element c3hctjf caqx3ze csxm8zh">
+      <img
+        alt=""
+        width="479"
+        height="400"
+        src="/assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg"
+        class="w-image c16euuik c1w5myg6 c1lqmysf cpl5pjo c1gxuxwl c3hctjf czr2pxy"
+        sizes="100vw"
+        srcset="
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg   16w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg   32w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg   48w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg   64w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg   96w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg  128w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg  256w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg  384w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg  640w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg  750w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg  828w,
+          /assets/photo_2026-01-07_21-20-00_4gm1RUwUwUSnhwdefgkS5.jpg 1080w
+        "
+        decoding="async"
+        loading="lazy"
+      />
+      <p
+        class="w-element cm9s8j1 c1j1xq0f ct5hk3t cnonmc3 c11pk6w2 c1cb3y4c c178psvk cvdg15f c67f1ov c1r17tdm c1kz4bsi cy8j7mm c1hwbdwo c10mz0pn c1gut7ra cvyaqlm c1wn9gbn ckhl5v6 c135vpv5 c1b1clqm chiu94f c1hnqa4c c154f7ei ckogthz c1k9b94x ct2q7n0 cwkwg65 cf2tlwo cf1rp6o"
+      >
+        У кожному русі - любов,<br />у кожному підйомі - свобода<br />
+      </p>
+      <div
+        class="w-element cn12ej2 cavd3zn cqlgez2 c14ymtwm c1rvd7tj c1xqcs4q c1s905i0 cyyop96 co37t6x"
+      >
+        <a
+          href="https://www.instagram.com/aprelieva_team?igsh=OXBxeXJrYWNtcTIx"
+          class="w-element ciu59yn c1b1clqm c1nq0kxk cu3pi3e c5x2380 c14yuvmm cn12ej2 cb600z1 c6abxro cpg6qcg c113dgjw cdwd3jx cdaqjl5 cisoiyb cc0k4t4 c1cvcmzo cpysbhr c135vpv5 c18bk9h5 c17nb4qn cohhi8y cmq09sf cv8r3fp c1lqmysf c6tin0 c1efg34n c11nvl6w c37pg5i c1sicgac chl4pjj cbjf47k cqihi0u"
+          >Записатися на тренування</a
+        >
+      </div>
+    </div>
+    <div
+      class="w-element cavd3zn c9jnjeu c1357293 ctui7sd c1bsvhny c150vpwe c22g687 c18i1rd8 c1b95j1f c13kpqk0 co8x3m2 c1c7pqte cuaiddj crr3c5e"
+    >
+      <h1
+        class="w-element c1h05pjj c1wxg36x c1svg9ka cmr7nb6 c12x7eb7 c2bznh9 c1vnf310"
+      >
+        Про нас
+      </h1>
+      <div
+        class="w-element cry9bxc c1qyy4dh c18v2pa2 c1lxiyww c1c33gnu cgb99cz c150vpwe c22g687 c1e2b3ev c13vvg1g c1obig1w cmoe9jo"
+      >
+        <div
+          class="w-element cry9bxc c1fhkm63 clnhgiz ch51qie c125plrs c1rrfr5h c8h7j7l co99jca c1xoe4it c1nzq1jt c18v2pa2 cgn90jy c1qyy4dh cpb5sl7 c12nur8y c1482uel c13vvg1g cnfsbl9 c1rsgvx8"
+        >
+          <p
+            class="w-element cry9bxc csvthht c1jz7gid c1rrfr5h c13qqaub cetw895 c1ngdwug c10yh23j c1wxg36x cblb78h cyw7scd cwk83fy c1lzcpx9 c1gw84sn cjq768y c1xhomzt c1482uel cmoe9jo c1obig1w c1hj59h4 c19jpgqe c1arylij"
+          >
+            Професійна студія повітряного спорту «Aprelieva TEAM» — це більше,
+            ніж просто тренування. Ми — велика спортивна сім’я, де кожен
+            розвивається, підтримує і надихає одне одного. У нас навчаються з
+            нуля діти й дорослі будь-якого віку, а тренери світового рівня
+            допомагають відкрити потенціал кожного.
+          </p>
+          <div
+            class="w-element c1bkqfhr cdtylqg chmjof8 cavd3zn c1rrfr5h c8h7j7l co99jca c1xoe4it c1nzq1jt c13qqaub c5m8ase clv8gve c1482uel cn1k7cs c1hj59h4 c1ra6w0l"
+          >
+            <img
+              alt=""
+              width="3746"
+              height="6874"
+              src="/assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg"
+              class="w-image c1drl4ib c1s0gswo c1gxuxwl c1h6fij5 c8h7j7l co99jca c1xoe4it c1nzq1jt c155ihl c1ah9i9y c9jnjeu c1482uel c63wm0n cbjf47k c9ubnvy c1ephz4q"
+              sizes="100vw"
+              srcset="
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg   16w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg   32w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg   48w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg   64w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg   96w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg  128w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg  256w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg  384w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg  640w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg  750w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg  828w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg 1080w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg 1200w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg 1920w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg 2048w,
+                /assets/IMG_0604_(1)_-vluakLZyelT10M11Hmh0.jpg 3840w
+              "
+              decoding="async"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-element cry9bxc c15cml01 c1lxiyww c1bgdbyl cgq4xm1 ctui7sd c1bsvhny c1357293 c9jnjeu c608rfc ct02u4h c1irqa5z c1ym7p2t c1bulmrh csxm8zh c1t6aizw c6hjwpc cxn4g30 cejbwvh c11mupy3 c1o2fgt6 c1b95j1f c13kpqk0"
+    >
+      <div
+        class="w-element clnhgiz ctbmchf ch51qie c125plrs c1w14gb3 c7ylbzb c5u7r4m c1h5pqsu cj7lqx6 c1fhiulb c1wjs627 c1vfzyt0 cykc25 c1i16q8a c13yemz1 c11gtnyo calc9b7"
+      >
+        <p class="w-element cwdvs8x c1jz7gid c1wxg36x c1tfabxh c7tla2u cwkwg65">
+          <b class="w-element c1wxg36x">Повітряна гімнастика: </b><br />кільце,
+          полотна та петлі. Робота над гнучкістю, силою, контролем тіла й
+          артистичністю. Передові циркові напрямки, які все більше набирають
+          популярність по всьому світу.
+        </p>
+      </div>
+      <div
+        class="w-element ctbmchf ch51qie c125plrs c1w14gb3 c7ylbzb c5u7r4m c1h5pqsu clnhgiz c1wjs627 c13yemz1 c1i16q8a c11gtnyo calc9b7"
+      >
+        <p class="w-element cwdvs8x c1jz7gid c1wxg36x c1tfabxh c7tla2u cwkwg65">
+          <b class="w-element c1wxg36x">Пілонний спорт:</b><br />пол денс, пол
+          фіт, пол екзот. Спортивний напрямок із силовими та акробатичними
+          елементами на пілоні. Розвиток сили, витривалості, гнучкості,
+          координації та техніки. Також включає повітряний пілон (мачту).
+        </p>
+      </div>
+      <div
+        class="w-element ctbmchf ch51qie c125plrs c1w14gb3 c7ylbzb c5u7r4m c1h5pqsu clnhgiz c1wjs627 c1i16q8a c13yemz1 c11gtnyo calc9b7"
+      >
+        <p
+          class="w-element cwdvs8x c1jz7gid c1wxg36x c1tfabxh c7tla2u c1fzqirp c1fsxl1s"
+        >
+          <b class="w-element c1wxg36x">Банджи фітнес:</b> <br />Динамічні
+          тренування з елементами польоту, кардіонавантаження та координації.
+          Завдяки підвісній системі зменшується ударне навантаження на суглоби
+          та хребет. Інтенсивний формат сприяє активному спалюванню калорій і
+          чудово підходить для зниження ваги.
+        </p>
+      </div>
+      <div
+        class="w-element clnhgiz ctbmchf ch51qie c125plrs c1w14gb3 c7ylbzb c5u7r4m c1h5pqsu c1wjs627 c11gtnyo calc9b7 c13yemz1 c1i16q8a"
+      >
+        <p class="w-element cwdvs8x c1jz7gid c1wxg36x c1tfabxh c7tla2u cwkwg65">
+          <b class="w-element c1wxg36x">Екзот:</b><br />Чуттєвий та виразний
+          напрям для дорослих, де поєднуються пластика, танець і впевненість у
+          собі.<br />Pole Exotic — це про грацію, контроль над тілом і вміння
+          передавати настрій через рух. Тут ти навчишся відчувати музику,
+          розкривати свою жіночність і рухатися красиво та усвідомлено.
+        </p>
+      </div>
+      <div
+        class="w-element clnhgiz ctbmchf ch51qie c125plrs c1w14gb3 c7ylbzb c5u7r4m c1h5pqsu c1wjs627 c11gtnyo calc9b7 c13yemz1 c1i16q8a"
+      >
+        <p
+          class="w-element cwdvs8x c1jz7gid c1wxg36x c1tfabxh c7tla2u c1eg2mql cwkwg65"
+        >
+          <b class="w-element c1wxg36x">Стретчинг:</b><br />Розвиток гнучкості,
+          амплітуди рухів і правильної техніки розтягування. Приємним бонусом
+          регулярних тренувань є шпагат.
+        </p>
+      </div>
+      <div
+        class="w-element clnhgiz ctbmchf ch51qie c125plrs c1w14gb3 c7ylbzb c5u7r4m c1h5pqsu c1wjs627 c11gtnyo calc9b7 c13yemz1 c1i16q8a"
+      >
+        <p class="w-element cwdvs8x c1jz7gid c1wxg36x c1tfabxh c7tla2u cwkwg65">
+          <b class="w-element c1wxg36x">Йога: </b><br />Фіт-формат із акцентом
+          на зміцнення м’язів, мобільність, дихальні практики та розслаблення.
+        </p>
+      </div>
+    </div>
+    <div
+      class="w-element c1c7pqte cuaiddj c1txcjpm c3j3462 ctui7sd c1bsvhny c1357293 c9jnjeu c1b95j1f c13kpqk0 c2fy1mu c194scij"
+    >
+      <h1 class="w-element c1wxg36x c12x7eb7 c2bznh9">Ми гарантуємо Вам:</h1>
+      <div
+        class="w-element clnhgiz cry9bxc c1lxiyww c1qyy4dh c18v2pa2 c8h7j7l co99jca c1xoe4it c1nzq1jt c3z3vlb c1ngdwug c10yh23j c13vvg1g c12jt7do"
+      >
+        <div
+          class="w-element cry9bxc c1lxiyww c15cml01 ce1qmkg cln1ah c1482uel c1jjfh4b c1v4b7zg c1bulmrh cmfhh7q cehyk0s c13yemz1 c1i16q8a c1v2g9jn c1s5r7yb c1ggkywf"
+        >
+          <div
+            class="w-element cmdbe1b cs9gqkj c1qiueq1 cjljt53 c1rbse75 c1m8vxl0 c8h7j7l co99jca c1xoe4it c1nzq1jt cqe39x4 c86t11j c6lwvnh cf0g8qr c2r2jtp c1gmhjv8 c67xcc3 cpl5pjo cqmttyn cwvjvme cv8r3fp cpsgktw cmq09sf"
+          >
+            <p
+              class="w-element c1jz7gid cwdvs8x cegahk1 c1wxg36x c1loaccz c3jndn5 c1rkbmqn"
+            >
+              <b class="w-element">Безпеку:</b> у наших студіях є все необхідне,
+              щоб забезпечити безпечні падіння для ваших талантів!
+            </p>
+          </div>
+          <div
+            class="w-element c1m42yeb c1n7r35l c1qiueq1 cjljt53 c1rbse75 c1m8vxl0 co99jca c1nzq1jt c8h7j7l c1xoe4it cqe39x4 c86t11j c6lwvnh cqmttyn cpl5pjo cmq09sf cv8r3fp cwvjvme cpsgktw c2r2jtp c1gmhjv8"
+          >
+            <p class="w-element c1jz7gid cwdvs8x c1wxg36x c1rkbmqn c3jndn5">
+              <b class="w-element">Комфорт: </b>затишна обстановка в студії
+              забезпечить якісне тренування та хороший настрій!
+            </p>
+          </div>
+          <div
+            class="w-element cmdbe1b cs9gqkj c1qiueq1 c1m8vxl0 c1rbse75 c1xoe4it co99jca c1nzq1jt c8h7j7l c891fy0 c86t11j c6lwvnh c13yemz1 cqmttyn cpl5pjo cwvjvme cpsgktw cmq09sf cv8r3fp c2r2jtp c1gmhjv8"
+          >
+            <p
+              class="w-element c1jz7gid cwdvs8x c1wxg36x c1rkbmqn c1eg2mql c3jndn5"
+            >
+              <b class="w-element">Першокласних тренерів:</b> наші досвідчені та
+              кваліфіковані тренери допоможуть досягти висот!
+            </p>
+          </div>
+          <div
+            class="w-element cmdbe1b cs9gqkj c1qiueq1 c1m8vxl0 c1rbse75 c1nzq1jt c1xoe4it c8h7j7l co99jca cmq09sf cv8r3fp cqmttyn cwvjvme cpsgktw c2r2jtp c1gmhjv8 c86t11j c6lwvnh c1v8g8p1"
+          >
+            <p class="w-element c1jz7gid cwdvs8x c1wxg36x c1rkbmqn c3jndn5">
+              <b class="w-element">Бажання повернутись знову:</b> наші незабутні
+              тренування змушують людей повертатись і надихати інших!
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-element cjljt53 c1m8vxl0 c1fhiulb c1uhltdt c8h7j7l co99jca c1xoe4it c1nzq1jt cetw895 c1h25lqh c196gxvc crnk5aq c1hj59h4 c1hezyl0 c1v2g9jn c1ljoky4 cmr7nb6"
+        >
+          <img
+            alt=""
+            width="3264"
+            height="4912"
+            src="/assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg"
+            class="w-image czr2pxy c1bkqfhr c8h7j7l co99jca c1xoe4it c1nzq1jt cxpgl7q"
+            sizes="100vw"
+            srcset="
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg   16w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg   32w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg   48w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg   64w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg   96w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg  128w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg  256w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg  384w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg  640w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg  750w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg  828w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg 1080w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg 1200w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg 1920w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg 2048w,
+              /assets/IMG_0724_upyFghhvsyKvgJ62jJ8WU.jpeg 3840w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="w-element cavd3zn c9jnjeu c1357293 ctui7sd c1bsvhny c1p6e86r c150vpwe c22g687 c1b95j1f c13kpqk0 crr3c5e"
+    >
+      <h1
+        class="w-element c1h05pjj c1wxg36x c1svg9ka cmr7nb6 c18m51b7 c12x7eb7 c2bznh9"
+      >
+        Про зал
+      </h1>
+      <div
+        class="w-element cry9bxc c1fhkm63 clnhgiz ch51qie c125plrs c8h7j7l co99jca c1xoe4it c1nzq1jt c13vvg1g"
+      >
+        <div
+          class="w-element c1o8klnv c1rrfr5h cry9bxc c1lfjoq7 c1qyy4dh ct02u4h c1482uel"
+        >
+          <p
+            class="w-element cry9bxc csvthht c1jz7gid czr2pxy c1jzkxpo c12sm2j2 c1wxg36x cblb78h c1xhomzt cmit4ly c19jpgqe"
+          >
+            Студія обладнана двома окремими, повністю укомплектованими залами,
+            створеними для комфортних, безпечних та ефективних тренувань як для
+            початківців, так і для досвідчених спортсменів.
+          </p>
+          <button
+            type="button"
+            class="w-button csru8nn c1qyy4dh ct02u4h ciu59yn c1w14gb3 c7ylbzb c1h5pqsu c5u7r4m c1mdo6kq csz3yie cn12ej2 c6xd4vr cb600z1 cpg6qcg c6abxro c113dgjw cl4bapb c1rrfr5h c1b1clqm c1ah9i9y c18rzt80 cdtbwtz c1i7nyap c1q0jf93 cff9lwm cdoj399 c9tqkg0 c14v8q3d c1mktnko c1gyam4v c1yki3qz cwk83fy"
+            aria-haspopup="dialog"
+            aria-expanded="false"
+            aria-controls="radix-:R9j6:"
+            data-state="closed"
+          >
+            Детальніше
+          </button>
+        </div>
+        <div
+          class="w-element cdtylqg chmjof8 cavd3zn c1rrfr5h c8h7j7l co99jca c1xoe4it c1nzq1jt c1fhiulb c1482uel"
+        >
+          <img
+            alt=""
+            width="3024"
+            height="4032"
+            src="/assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg"
+            class="w-image c1drl4ib c1s0gswo c1gxuxwl c1h6fij5 c8h7j7l co99jca c1xoe4it c1nzq1jt c155ihl c1qom380 c1ah9i9y c9jnjeu c1482uel c6ta5m4"
+            sizes="100vw"
+            srcset="
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg   16w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg   32w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg   48w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg   64w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg   96w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg  128w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg  256w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg  384w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg  640w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg  750w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg  828w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg 1080w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg 1200w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg 1920w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg 2048w,
+              /assets/IMG_1373-_2__Xv716AcNWQKxr2UCg5NxQ.jpg 3840w
+            "
+            decoding="async"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="w-element c9jnjeu c1357293 ctui7sd c1bsvhny c1b95j1f c13kpqk0 reviews-section-wrap" id="reviews">
+      <h1 class="w-element c1wxg36x c12x7eb7 c2bznh9">Відгуки</h1>
+      <div id="carousel-root"></div>
+    </div>
+
+    <div c1cfvpvs c1c6o51 cwkpbe9 c181xomn c1yyy08r c174sw29 c1b95j1f c13kpqk0"
+    >
+      <div
+        class="w-element clnhgiz c8h7j7l co99jca c1xoe4it c1nzq1jt c1wxg36x ch51qie c125plrs c1rrfr5h c1fhiulb cybwsdi c1igcr36 c1482uel c1wjs627"
+      >
+        <h1 class="w-element c1qom380 c1ux4mll c1bplpaw c1lhq18o cl7i9y7">
+          Запишись — і спробуй, як це!
+        </h1>
+        <form class="w-element c1qom380">
+          <div class="w-element cry9bxc c1lfjoq7 ct02u4h">
+            <a
+              href="https://www.instagram.com/aprelieva_team?igsh=OXBxeXJrYWNtcTIx"
+              class="w-element ciu59yn c1lrq100 cdpnt9v c1u1jra5 c3ovwjq c8h7j7l co99jca c1xoe4it c1nzq1jt c1b1clqm cmdbe1b cs9gqkj cb600z1 c6abxro c10mt0ot czr2pxy c11hlw4r c135vpv5 cv5mgza c15pbqqy c9bwjp6 cwvjvme c1pr4a8e c13yemz1 c1i16q8a chl4pjj c1womtop c13ftgcq"
+              >Записатися</a
+            >
+            <p
+              class="w-element c1wxg36x c5jlsy7 co8gpyk cybwsdi cq9pue7 c3vevc0 c1tuczl c1cakw9x cwkwg65"
+            >
+              Вартість пробного тренування — 200 грн
+            </p>
+          </div>
+        </form>
+      </div>
+      <img
+        alt=""
+        width="1179"
+        height="2096"
+        src="/assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG"
+        class="w-image c1rrfr5h c1fhiulb cyw9rmm c1gxuxwl c1w14gb3 c7ylbzb c5u7r4m c1h5pqsu c35z9ue c1482uel cu24hyo"
+        sizes="100vw"
+        srcset="
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG   16w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG   32w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG   48w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG   64w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG   96w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG  128w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG  256w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG  384w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG  640w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG  750w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG  828w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG 1080w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG 1200w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG 1920w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG 2048w,
+          /assets/IMG_0537_zhQalaOUQDmXBZvmZZYks.JPG 3840w
+        "
+        decoding="async"
+        loading="lazy"
+      />
+    </div>
+    <div
+      class="w-element clnhgiz ch51qie c125plrs c9jnjeu c1357293 cry9bxc c1cegu17 cx36bpy c1qyy4dh ce1qmkg cgn90jy c1lxiyww c1jjfh4b cmoe9jo c1obig1w c1hyheg1 c1fpvx8m c1sz3la2 c1axzryg cp8vz4m"
+    >
+      <div
+        class="w-element c937pos c1v5v0 c874743 cx6c9kw c181xomn c1yyy08r cbjf47k cry9bxc c17duva6 c1ps4txv c8xita1 cqk8ew7 c1e2b3ev cnfsbl9 c1rsgvx8 ctf8nym c1cqrdfr c1lqmysf"
+      >
+        <div class="w-element c1onjpca">
+          <p
+            class="w-element c1wxg36x co8gpyk c1tme1mb c1eyv08h c12jhily cq4dxli c1482uel csyzqty cp5p7fk c1fzqirp c1ro4ucl"
+          >
+            Адреса:<br /><b class="w-element">Соборності, 11, Луцьк</b><br /><b
+              class="w-element"
+              >Супутника 14а, (ЖК Супернова)</b
+            >
+          </p>
+        </div>
+        <div class="w-element">
+          <p
+            class="w-element c1wxg36x c1jz7gid c1tme1mb co8gpyk c1eyv08h c12jhily c9ubnvy cqe39x4 c1hj59h4 csyzqty c1fzqirp c1ro4ucl"
+          >
+            Графік:<br />Пн-Пт 08:00 - 21:00<br />Сб-Нд 09:00 - 19:00
+          </p>
+        </div>
+      </div>
+      <div
+        class="w-element c3jndn5 c7klx50 c1qrxaqp c2zcut6 c1b0nswz c1gw84sn crnk5aq"
+      >
+        <a
+          href="https://www.instagram.com/aprelieva_team?igsh=OXBxeXJrYWNtcTIx"
+          class="w-element c1q2ihc5 c1lrq100 cdpnt9v c1u1jra5 c3ovwjq c1rz9aaq cnxdcup c1idwigv cd1r06b c1b1clqm c3w6o8i c113dgjw c1x4o3yc cpg6qcg cl4bapb ckkbdq2 c135vpv5 c17qu19u c12f3mdq crh40th c1x7vwor cl5j4eb c1o1u7kg c1ruj6k9 cqe39x4 c9ubnvy cs1aog0 c13madgv c15ofxyx c1x2v3a3 cxgh4jj c1v2g9jn c13ftgcq cnlef5d c15pbqqy"
+          >Ваше питання</a
+        >
+        <div
+          class="w-element c7klx50 c1ur2mcm c2zcut6 c1g8516c c89odtq ctamqs5 cjljt53 cry9bxc cizjjwu c1h82vm9"
+        >
+          <a
+            href="https://www.instagram.com/aprelieva_team?igsh=OXBxeXJrYWNtcTIx"
+            class="w-element c1q2ihc5 c1lrq100 cdpnt9v c1u1jra5 c3ovwjq c1ugjd4d c1wbbrzh c1afjekm c1grw0kp c1b1clqm c1p4ollr c1em9s26 cir85gx c135vpv5 c1qom380 c3yiua4 cudvqzq c1c1rn2w c12f3mdq crh40th c1ttp6ok cjbr9c5 ch2clax c1xgaagj czdeg3 c132xu03 c13madgv c1x2v3a3 c13ftgcq cnlef5d c15pbqqy cx4zgff c2wjayf"
+            ><img
+              alt=""
+              width="281"
+              height="280"
+              src="/assets/Instagram_MPu8LMqZg1p83s50B9PUE.png"
+              class="w-image cybwsdi c1igcr36 cir85gx"
+              sizes="100vw"
+              srcset="
+                /assets/Instagram_MPu8LMqZg1p83s50B9PUE.png  16w,
+                /assets/Instagram_MPu8LMqZg1p83s50B9PUE.png  32w,
+                /assets/Instagram_MPu8LMqZg1p83s50B9PUE.png  48w,
+                /assets/Instagram_MPu8LMqZg1p83s50B9PUE.png  64w,
+                /assets/Instagram_MPu8LMqZg1p83s50B9PUE.png  96w,
+                /assets/Instagram_MPu8LMqZg1p83s50B9PUE.png 128w,
+                /assets/Instagram_MPu8LMqZg1p83s50B9PUE.png 256w,
+                /assets/Instagram_MPu8LMqZg1p83s50B9PUE.png 384w,
+                /assets/Instagram_MPu8LMqZg1p83s50B9PUE.png 640w
+              "
+              decoding="async"
+              loading="lazy" /></a
+          ><a
+            href="https://www.facebook.com/share/1D6bZyWQoK/?mibextid=wwXIfr"
+            class="w-element c1edubs3 c1lrq100 cdpnt9v c1u1jra5 c3ovwjq c1ugjd4d c1wbbrzh c1afjekm c1grw0kp c1b1clqm c1p4ollr c1em9s26 cir85gx c135vpv5 c1qom380 c3yiua4 cudvqzq c1c1rn2w c12f3mdq crh40th c1ttp6ok cjbr9c5 c132xu03 ch2clax c1xgaagj czdeg3 c13madgv c1x2v3a3 c13ftgcq cnlef5d c15pbqqy cx4zgff c2wjayf"
+            ><img
+              alt=""
+              width="281"
+              height="280"
+              src="/assets/Facebook_sLtMg777wOCBX6cFjbGRD.png"
+              class="w-image cybwsdi c1igcr36"
+              sizes="100vw"
+              srcset="
+                /assets/Facebook_sLtMg777wOCBX6cFjbGRD.png  16w,
+                /assets/Facebook_sLtMg777wOCBX6cFjbGRD.png  32w,
+                /assets/Facebook_sLtMg777wOCBX6cFjbGRD.png  48w,
+                /assets/Facebook_sLtMg777wOCBX6cFjbGRD.png  64w,
+                /assets/Facebook_sLtMg777wOCBX6cFjbGRD.png  96w,
+                /assets/Facebook_sLtMg777wOCBX6cFjbGRD.png 128w,
+                /assets/Facebook_sLtMg777wOCBX6cFjbGRD.png 256w,
+                /assets/Facebook_sLtMg777wOCBX6cFjbGRD.png 384w,
+                /assets/Facebook_sLtMg777wOCBX6cFjbGRD.png 640w
+              "
+              decoding="async"
+              loading="lazy" /></a
+          ><a
+            href="https://www.tiktok.com/@aerial.aprelieva_"
+            class="w-element c1edubs3 c1lrq100 cdpnt9v c1u1jra5 c3ovwjq c1ugjd4d c1wbbrzh c1afjekm c1grw0kp c1b1clqm c1p4ollr c1em9s26 cir85gx c135vpv5 c1qom380 c3yiua4 cudvqzq c128r2zr c12f3mdq crh40th c1ttp6ok cjbr9c5 c132xu03 ch2clax c1xgaagj czdeg3 c13madgv c1x2v3a3 c13ftgcq cnlef5d c15pbqqy cx4zgff c2wjayf"
+            ><img
+              alt=""
+              width="281"
+              height="280"
+              src="/assets/icons8-tiktok-48_8UODhAJU39OnU2Wyb7SSy.png"
+              class="w-image cybwsdi c1igcr36"
+              sizes="100vw"
+              srcset="
+                /assets/icons8-tiktok-48_8UODhAJU39OnU2Wyb7SSy.png  16w,
+                /assets/icons8-tiktok-48_8UODhAJU39OnU2Wyb7SSy.png  32w,
+                /assets/icons8-tiktok-48_8UODhAJU39OnU2Wyb7SSy.png  48w,
+                /assets/icons8-tiktok-48_8UODhAJU39OnU2Wyb7SSy.png  64w,
+                /assets/icons8-tiktok-48_8UODhAJU39OnU2Wyb7SSy.png  96w,
+                /assets/icons8-tiktok-48_8UODhAJU39OnU2Wyb7SSy.png 128w,
+                /assets/icons8-tiktok-48_8UODhAJU39OnU2Wyb7SSy.png 256w,
+                /assets/icons8-tiktok-48_8UODhAJU39OnU2Wyb7SSy.png 384w,
+                /assets/icons8-tiktok-48_8UODhAJU39OnU2Wyb7SSy.png 640w
+              "
+              decoding="async"
+              loading="lazy"
+          /></a>
+        </div>
+      </div>
+      <div class="w-element curnleh c17jj8qr">
+        <img
+          alt=""
+          width="794"
+          height="300"
+          src="/assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png"
+          class="w-image cddrxfv c1lyhjp7 c1l58yll c1fhiulb c1kne9qb cauqto8 cgn90jy curnleh cqe39x4 c9ubnvy cw4saqy c1rx3y09 c1nqi8vs c1chk6hj"
+          sizes="100vw"
+          srcset="
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png   16w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png   32w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png   48w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png   64w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png   96w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png  128w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png  256w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png  384w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png  640w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png  750w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png  828w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png 1080w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png 1200w,
+            /assets/1000033997_9_MXIF5qhxWsF1fC2EiLjw0.png 1920w
+          "
+          decoding="async"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    <script id="vike_pageContext" type="application/json">
+      {
+        "_urlRewrite": null,
+        "pageId": "/pages/index",
+        "routeParams": {},
+        "data": {
+          "url": "https://url/",
+          "system": {
+            "params": {},
+            "search": {},
+            "origin": "https://url",
+            "pathname": "/"
+          },
+          "resources": {},
+          "pageMeta": {
+            "title": "Affordable & Quality Pet Grooming Services",
+            "description": "A loving, professional dog care in San Francisco",
+            "excludePageFromSearch": false,
+            "language": "!undefined",
+            "socialImageAssetName": "!undefined",
+            "socialImageUrl": "!undefined",
+            "status": "!undefined",
+            "redirect": "!undefined",
+            "custom": []
+          }
+        }
+      }
+    </script>
+    <script id="vike_globalContext" type="application/json">
+      {}
+    </script>
+    <script
+      src="/assets/entries/entry-server-routing.BMSVuvJ5.js"
+      type="module"
+      async
+    ></script>
+    <link
+      rel="modulepreload"
+      href="/assets/entries/pages_index.DLuogbTV.js"
+      as="script"
+      type="text/javascript"
+    /><link
+      rel="modulepreload"
+      href="/assets/chunks/chunk-BLkRbyx4.js"
+      as="script"
+      type="text/javascript"
+    />
+    <script>
+      (function () {
+        function buildHTML(images) {
+          var cards = '';
+          for (var i = 0; i < images.length; i++) {
+            cards +=
+              '<div class="review-card"><div class="review-card-frame">' +
+              '<img src="assets/reviews/' + images[i] + '" alt="Відгук про студію" loading="lazy">' +
+              '</div></div>';
+          }
+          return (
+            '<div class="carousel-wrapper">' +
+            '<button class="carousel-arrow carousel-arrow-left" aria-label="Попередній відгук" disabled>' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>' +
+            '</button>' +
+            '<div class="carousel-viewport"><div class="carousel-track">' +
+            cards +
+            '</div></div>' +
+            '<button class="carousel-arrow carousel-arrow-right" aria-label="Наступний відгук">' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>' +
+            '</button>' +
+            '</div>' +
+            '<div class="carousel-dots"></div>'
+          );
+        }
+
+        function ReviewsCarousel() {
+          this.viewport = document.querySelector('.carousel-viewport');
+          this.track = document.querySelector('.carousel-track');
+          this.prevBtn = document.querySelector('.carousel-arrow-left');
+          this.nextBtn = document.querySelector('.carousel-arrow-right');
+          this.dotsContainer = document.querySelector('.carousel-dots');
+          if (!this.track) return;
+          this.cards = this.track.querySelectorAll('.review-card');
+          if (!this.cards.length) return;
+          this.gap = 28;
+          this.currentIndex = 0;
+          this.calc();
+          this.buildDots();
+          this.bind();
+          this.go(0);
+        }
+
+        ReviewsCarousel.prototype.calc = function () {
+          var vw = this.viewport.clientWidth;
+          if (!vw || !this.cards.length) return;
+          this.cardWidth = this.cards[0].offsetWidth;
+          var style = getComputedStyle(this.track);
+          this.gap = parseInt(style.columnGap) || parseInt(style.gap) || 28;
+          this.step = this.cardWidth + this.gap;
+          var visible = Math.max(1, Math.round(vw / this.step));
+          this.maxIdx = Math.max(0, this.cards.length - visible);
+          if (this.currentIndex > this.maxIdx) this.currentIndex = this.maxIdx;
+        };
+
+        ReviewsCarousel.prototype.go = function (idx) {
+          if (idx < 0) idx = 0;
+          if (idx > this.maxIdx) idx = this.maxIdx;
+          this.currentIndex = idx;
+          this.track.style.transform = 'translateX(' + (-this.step * idx) + 'px)';
+          this.prevBtn.disabled = idx === 0;
+          this.nextBtn.disabled = idx >= this.maxIdx;
+          var dots = this.dotsContainer.querySelectorAll('.carousel-dot');
+          var self = this;
+          dots.forEach(function (d, i) { d.classList.toggle('active', i === self.currentIndex); });
+        };
+
+        ReviewsCarousel.prototype.next = function () { this.go(this.currentIndex + 1); };
+        ReviewsCarousel.prototype.prev = function () { this.go(this.currentIndex - 1); };
+
+        ReviewsCarousel.prototype.buildDots = function () {
+          this.dotsContainer.innerHTML = '';
+          var total = this.maxIdx + 1;
+          var self = this;
+          for (var i = 0; i < total; i++) {
+            var dot = document.createElement('button');
+            dot.className = 'carousel-dot';
+            dot.setAttribute('aria-label', 'Відгук ' + (i + 1));
+            dot.addEventListener('click', (function (idx) { return function () { self.go(idx); }; })(i));
+            this.dotsContainer.appendChild(dot);
+          }
+          if (total > 0) this.dotsContainer.firstChild.classList.add('active');
+        };
+
+        ReviewsCarousel.prototype.bind = function () {
+          var self = this;
+          this.prevBtn.addEventListener('click', function () { self.prev(); });
+          this.nextBtn.addEventListener('click', function () { self.next(); });
+
+          var startX = 0, dragging = false;
+          this.track.addEventListener('touchstart', function (e) {
+            startX = e.touches[0].clientX; dragging = true;
+          }, { passive: true });
+          this.track.addEventListener('touchend', function (e) {
+            if (!dragging) return; dragging = false;
+            var diff = startX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 40) diff > 0 ? self.next() : self.prev();
+          });
+
+          var md = false, mx = 0;
+          this.track.addEventListener('mousedown', function (e) { md = true; mx = e.clientX; self.track.style.cursor = 'grabbing'; });
+          this.track.addEventListener('mouseup', function (e) {
+            if (!md) return; md = false; self.track.style.cursor = 'grab';
+            var diff = mx - e.clientX;
+            if (Math.abs(diff) > 40) diff > 0 ? self.next() : self.prev();
+          });
+          this.track.addEventListener('mouseleave', function () { md = false; self.track.style.cursor = 'grab'; });
+
+          var rt;
+          window.addEventListener('resize', function () {
+            clearTimeout(rt);
+            rt = setTimeout(function () { self.calc(); self.buildDots(); self.go(self.currentIndex); }, 250);
+          });
+        };
+
+        var carousel = null, imageList = null;
+
+        function loadCarousel() {
+          var root = document.getElementById('carousel-root');
+          if (!root) return;
+          if (root.querySelector('.carousel-viewport') && carousel && carousel.track.isConnected) return;
+
+          if (imageList && imageList.length) {
+            root.innerHTML = buildHTML(imageList);
+            carousel = new ReviewsCarousel();
+            return;
+          }
+
+          fetch('assets/reviews/list.json')
+            .then(function (r) { return r.json(); })
+            .then(function (images) {
+              imageList = images;
+              if (root && images.length) {
+                root.innerHTML = buildHTML(images);
+                carousel = new ReviewsCarousel();
+              }
+            })
+            .catch(function () {
+              if (!imageList) {
+                imageList = ['IMG_4674.PNG','IMG_4675.PNG','IMG_4678.PNG','IMG_4679.PNG','IMG_4680.PNG','IMG_4681.PNG','IMG_4683.PNG','IMG_4685.PNG','IMG_4687.PNG','IMG_4688.PNG'];
+              }
+              if (root) {
+                root.innerHTML = buildHTML(imageList);
+                carousel = new ReviewsCarousel();
+              }
+            });
+        }
+
+        setInterval(loadCarousel, 300);
+      })();
+    </script>
+
+  <script src="/assets/reviews-button.js" defer></script>
+</body>
+</html>

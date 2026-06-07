@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+__MACOSX/
+
+# IDE
+.idea/
+*.iml
+
+# Backup files
+*.bak
+*~
+
+# OS files
+Thumbs.db
+Desktop.ini
+
+# Large archives (optional — розкоментуй якщо Photos.zip не потрібен у репо)
+# Photos.zip
