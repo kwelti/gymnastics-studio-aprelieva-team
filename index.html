@@ -144,6 +144,11 @@
         .carousel-arrow svg { width: 14px; height: 14px; }
         .carousel-viewport { margin: 0 2px; }
       }
+      /* fix: приховати оверлей діалогу коли закритий */
+      .w-dialog-overlay[data-state="closed"],
+      .w-dialog-content[data-state="closed"] {
+        display: none !important;
+      }
     </style>
   </head>
   <body
@@ -179,6 +184,7 @@
         </div></button
       ><button
         class="w-element c1lrq100 cdpnt9v c1u1jra5 c3ovwjq cgokyrd c1rz9aaq cnxdcup c1idwigv cd1r06b cavd3zn cmyg2r9 c1cvcmzo c9h53jh c1k0o02s c143p8o c1k26d3g coyqk5m c1ngdwug c10yh23j ckkbdq2 c1wxg36x c17b9p6f cuiv0do cohhi8y cr2orvw cgb53j1 c1ro4ucl c1s5r7yb c1ggkywf"
+        onclick="document.getElementById('reviews').scrollIntoView({behavior:'smooth'});"
       >
         Відгуки</button
       ><a href="/" class="w-element cir85gx c9jnjeu c1357293"

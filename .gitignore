@@ -16,3 +16,8 @@ Desktop.ini
 
 # Large archives (optional — розкоментуй якщо Photos.zip не потрібен у репо)
 # Photos.zip
+
+# Node (local dev tools)
+node_modules/
+package.json
+package-lock.json

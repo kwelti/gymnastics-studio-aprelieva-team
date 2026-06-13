@@ -8,8 +8,9 @@
       if (el.textContent.trim() === 'Відгуки' && !el._reviewsHandled) {
         el._reviewsHandled = true;
         el.addEventListener('click', function(e) {
+          if (e.defaultPrevented) return;
+          if (el.tagName === 'A' && el.getAttribute('href') === '#reviews') return;
           e.preventDefault();
-          e.stopPropagation();
           var reviews = document.getElementById('reviews');
           if (reviews) {
             reviews.scrollIntoView({behavior: 'smooth'});
